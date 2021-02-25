@@ -29,3 +29,15 @@ Install-ADDSForest -CreateDnsDelegation:$false `
     -NoRebootOnCompletion:$false `
     -SysvolPath “C:\Windows\SYSVOL” `
     -Force:$true -Verbose
+
+# Iets meer over variables
+$service = Get-Service
+$path = 'C:\Temp'
+$nummers = '7, 8, 9, 10'
+
+# Remote computer ophalen
+Get-Service -Computer 'Client1.school.local'
+
+# Remote commands
+Enter-PSSession -ComputerName '10.0.1.3' -Credential (Get-Credential) 
+
