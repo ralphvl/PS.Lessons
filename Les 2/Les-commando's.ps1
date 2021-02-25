@@ -30,14 +30,46 @@ Install-ADDSForest -CreateDnsDelegation:$false `
     -SysvolPath “C:\Windows\SYSVOL” `
     -Force:$true -Verbose
 
+# Formateren van het een en ander
+Get-Command -Verb Format | Select-Object Name
+
+
+# Ophalen van object commapndo's
+Get-Command -Module Microsoft.PowerShell.Utility | Where-Object {$_.Name -like "*Object"} | Select-Object Name
+
+
+# Paar voorbeelden
+Get-Service | Where-Object {$_.Status -eq 'Running'}
+Get-Service | Group-Object Status
+Get-Service | Sort-Object Status
+Get-Service | Measure-Object
+
+# Ophalen van object commapndo's
+Get-Command -Module Microsoft.PowerShell.Utility | Where-Object {$_.Name -like "*Out*"} | Select-Object Name
+
+
 # Iets meer over variables
 $service = Get-Service
 $path = 'C:\Temp'
 $nummers = '7, 8, 9, 10'
 
-# Remote computer ophalen
-Get-Service -Computer 'Client1.school.local'
+# Voorbeeld
+Get-ChildItem -Path $path
+
+# Firewall disablen
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+
+
+# Restarten van PC
+Restart-Computer -Computername 'Client1.school.local' -Credential (Get-Credential) -Force
 
 # Remote commands
-Enter-PSSession -ComputerName '10.0.1.3' -Credential (Get-Credential) 
+Enter-PSSession -ComputerName 'Client1.school.local' -Credential (Get-Credential) 
+Get-Service
+Get-ComputerInfo
+exit    
+
+# Invoke commands
+Invoke-Command -ComputerName 'Client1.school.local'  -Credential (Get-Credential) -ScriptBlock {Get-Service}
+
 
