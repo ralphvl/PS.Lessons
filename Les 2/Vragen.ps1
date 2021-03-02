@@ -16,8 +16,12 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 
 # Ik wil graag  alle processen zien met ps en deze exporteren naar een CSV bestand
 
+# Kan ik dit ook naar een HTML bestand exporteren
+
 # Opdracht 2: Remote commando's zonder sessie
 # Ik wil graag client1 stoppen vanaf DC01 met een enkel remote commando
+
+# Welke commando's kunnen nog meer op deze manier werken? Verzin er 5
 
 # Opdracht 3: Een remote powershell sessie opzetten
 # Zet eerste een Powershell sessie op met Client1
@@ -30,4 +34,4 @@ Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
 # Ik wil niet constant de credentials met Get-Credential opnieuw opvragen
 # Maak een nieuwe variable $credential met hierin de credentials via Get-Credential
 
-# Ik wil met deze $Credential variable de eventlog opvragen via Invoke-Command
+# Ik wil met deze $Credential variable de application eventlog opvragen via Invoke-Command
