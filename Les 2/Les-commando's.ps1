@@ -45,8 +45,9 @@ Get-Service | Sort-Object Status
 Get-Service | Measure-Object
 
 # Ophalen van object commapndo's
-Get-Command -Module Microsoft.PowerShell.Utility | Where-Object {$_.Name -like "*Out*"} | Select-Object Name
+Get-Command -Module Microsoft.PowerShell.Utility | Where-Object {$_.Name -like "*Export*"} | Select-Object Name
 
+Get-Service | Export-Csv -Path 'C:\temp\services.csv' -Delimiter ';' 
 
 # Iets meer over variables
 $service = Get-Service
