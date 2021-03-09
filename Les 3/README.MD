@@ -10,7 +10,7 @@ Github Desktop: https://desktop.github.com/
 5. Installeer en configureer eventueel Github Desktop.
 6. Zorg dat de repository gecloned is op je computer en push eventuele code naar Github
 
-## Opdrachten
+# Opdrachten
 ### Opdracht 1: Een basis script
 *Basis beschrijving*
 Ik wil een eenvoudige manier hebben om informatie te verkrijgen over de server.
@@ -19,7 +19,8 @@ Ik wil een eenvoudige manier hebben om informatie te verkrijgen over de server.
 
 *Zorg dat het script hier aan voldoet*
 - Er is beschreven welk deel van de code wat doet in de vorm van comments.
-- Er kan via variablen vooraf ingesteld worden wat de output locatie is.
+- Er kan via parameters ingevult worden wat de output locatie moet zijn.
+- Er is een nette documentatie aan het begin van het script.
 - Het bestand is opgeslagen in Github.
 
 ### Opdracht 2: Verzin zelf iets
@@ -30,7 +31,23 @@ Probeer zelf een leuke toepassing voor een script te verzinnen. Je mag het zo ge
 - Er is beschreven welk deel van de code wat doet in de vorm van comments.
 - Het bestand is opgeslagen in Github.
 - Er wordt input genomen van een bestand.
-- Er zijn diverse variablen vooraf ingesteld.
+- Er is een nette documentatie aan het begin van het script.
+- Er worden parameters gebruikt.
 
 ## Inleveren
-Als je het nagekeken wilt hebben kan je de github link naar info@anvion.nl versturen.
+Kunnen jullie deze opdrachten graag inleveren door de GitHub link te sturen richting info@anvion.nl
+
+Als je eventueel de GitHub repo op private hebt graag een invite versturen richting ralphvl
+
+# Extra leeswerk
+## Learn Windows PowerShell 3 in a Month of Lunches
+### Chapter 26: Using someone else’s script
+- The script. (blz 309 t/m 313)
+- It’s a line-by-line examination. (blz 313 t/m 315)
+### Chapter 27: You call this scripting?
+- Not programming, more like batch files. (blz 257 t/m 258)
+- Making commands repeatable. (blz 258 t/m 259)
+- Parameterizing commands. (blz 259 t/m 260)
+- Creating a parameterized script. (blz 261 t/m 262)
+- Documenting your script. (blz 262 t/m 264)
+
